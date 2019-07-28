@@ -1,0 +1,26 @@
+.header{
+    color: $color-white;
+    padding-top: 11rem;
+    position: relative;
+
+    &__nav{
+        text-align: center;
+
+    }
+
+    &__icons-box{
+    
+        &>*{
+            margin-right: 1rem;
+        }
+    }
+
+
+    .social-btns-box{
+        
+    }
+
+
+}
+    
+

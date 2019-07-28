@@ -1,0 +1,92 @@
+.btn{
+    // font-weight: 700;
+    letter-spacing: .4rem;
+    text-decoration: none;
+    font-size: 1.6rem;  
+    border: none;
+    cursor: pointer;
+    padding: 1.4rem 3rem;
+    display: inline-block;
+    color: #eee;
+
+    // @include respond(laptop){
+    //     font-size: 1rem;
+    // }
+
+    &--white{
+        letter-spacing: .8rem;
+
+        font-family: 'Montserrat', sans-serif;
+        color: $color-primary;
+        background-color: #eee;
+        padding: 1.4rem 4.4rem;
+        border-radius: .2rem;
+        transition: all 0.2s;
+        font-weight: 700;
+        &:hover{
+            background-color: rgba(#eee,0.3);
+        }
+    }
+
+
+    &--social{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 9.4rem;
+        border: 2px solid #eee;
+        position: relative;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        transition: all 0.3s;
+        @include respond(tab2){
+            
+            
+        }
+
+       &:hover{
+           background-color: $color-white;
+
+           .icon--btn{
+           fill: var(--color-primary);
+            font-size: 1rem;
+        }
+
+           color: $color-primary;
+       }
+
+    }
+
+
+
+    &--dropdown{
+        
+        display: block;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            transform: translateY(-8%) scale(1);
+            
+
+        }
+    }
+
+
+
+    &--products{
+        font-family: 'Montserrat', sans-serif;
+
+        padding: 0;
+        &:hover{
+            
+            border-bottom: 1px solid $color-white;
+        }
+
+
+
+    
+    }
+
+   
+
+}

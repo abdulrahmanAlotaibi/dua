@@ -1,0 +1,15 @@
+.section-products{
+    display: block; 
+    height: 100rem;
+    text-align: center;
+    @include respond(tab2){
+        height: 200rem;
+    }
+    &__photo{
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform:  scale(1.1);
+        }
+    }
+} 

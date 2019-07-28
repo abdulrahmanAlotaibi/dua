@@ -1,0 +1,64 @@
+.row{
+    max-width: $grid-width;
+    height: 10rem;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    @include clear-fix;
+
+    
+    &:not(:last-child){
+        margin-right: $horizantal-space;
+        
+        @include respond(tab2){
+            margin-right:0;
+        }
+    }
+        @include respond(tab2){
+            max-width: 50rem;
+        }
+   
+
+
+    [class^="col-"]{
+        @include clear-fix;
+
+        float: left;
+
+    
+
+    @include respond(tab2){
+        width: 100% !important;
+        margin-bottom: 6rem;
+        
+
+    }
+    }
+    .col-1-of-2{
+        width: calc( (100% - #{$horizantal-space} ) / 2 );
+    }
+
+
+    .col-1-of-3{
+        width: calc( (100% - (2 * #{$horizantal-space}) ) / 3 );
+    }
+
+
+    .col-1-of-4{
+        width: calc( (100% - (3 * #{$horizantal-space}) ) / 4 );
+    }
+
+
+    .col-1-of-5{
+        width: calc( (100% - (4 * #{$horizantal-space}) ) / 5 );
+    }
+
+
+    .col-1-of-6{
+        width: calc( (100% - (5 * #{$horizantal-space}) ) / 6 );
+    }
+
+    .col-1-of-7{
+        width: calc( (100% - (6 * #{$horizantal-space}) ) / 7 );
+    }
+}

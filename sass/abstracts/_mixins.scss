@@ -1,0 +1,47 @@
+@mixin clear-fix{
+    ::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+//MEDIA QUERY MANAGER
+
+/* 
+0 - 600px : PHONE
+600PX - 900PX : TABLET PORTRAIT
+900PX - 1200PX : TABLET LANDSCAPE
+[1200 - 1800] IS WHERE OUR NORMAL STYLES APPLY
+900PX - 1200PX :LAPTOP 
+1800PX + : BIG DESKTOP
+
+
+$breakpoints arguments chioces:
+- Phone 
+- tab-port
+-tab-port2
+- tab-land
+- big-desktop
+
+1em = 16px
+
+ORDER: Base + typography > general layout + grid > page layout > componenets 
+*/
+@mixin respond($breakpoints){
+    @if $breakpoints == laptop{
+        @media (max-width:84.375em){@content};
+    }
+
+    
+    @if $breakpoints == tab{
+        @media (max-width:75em){@content};
+    }
+    
+    @if $breakpoints == tab2{
+        @media (max-width:64em){@content};
+    }
+    
+
+    
+}

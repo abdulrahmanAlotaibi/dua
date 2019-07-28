@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    @include respond(laptop){
+        font-size: 56%;
+    }
+    @include respond(tab){
+        font-size: 50%;
+    }
+    scroll-behavior: smooth;
+
+}
+
+body{
+    // height: 150vh;
+    box-sizing: border-box;
+    padding: 13rem;
+}
